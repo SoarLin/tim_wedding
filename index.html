@@ -9,6 +9,11 @@
   <!--/ favicon -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href='http://fonts.googleapis.com/css?family=Amatic+SC:700,400' rel='stylesheet' type='text/css'>
+  <!-- fancybox -->
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <link rel="stylesheet" href="js/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+  <link rel="stylesheet" href="js/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+
   <link rel="stylesheet" href="css/styles.css" media="screen">
 </head>
 
@@ -105,8 +110,8 @@
         <!-- Pom爸媽結婚照 -->
         <div class="media">
           <div class="media-left media-middle">
-            <a href="#">
-              <img class="media-object timeline-thumb" src="images/timeline/01_thumb.jpg" alt="...">
+            <a class="fancybox" href="images/timeline/01.jpg" title="Pom 爸媽結婚照">
+              <img class="media-object timeline-thumb" src="images/timeline/01_thumb.jpg" alt="" />
             </a>
           </div>
           <div class="media-body">
@@ -117,7 +122,7 @@
         <!-- Miki爸媽結婚照 -->
         <div class="media">
           <div class="media-left media-middle">
-            <a href="#">
+            <a class="fancybox" href="images/timeline/02.jpg" title="Miki 爸媽結婚照">
               <img class="media-object timeline-thumb" src="images/timeline/02_thumb.jpg" alt="...">
             </a>
           </div>
@@ -130,7 +135,7 @@
         <!-- Pom出生 -->
         <div class="media">
           <div class="media-left media-middle">
-            <a href="#">
+            <a class="fancybox" href="images/timeline/03.jpg" title="Pom 出生照">
               <img class="media-object timeline-thumb" src="images/timeline/03_thumb.jpg" alt="...">
             </a>
           </div>
@@ -143,7 +148,7 @@
         <!-- Miki出生 -->
         <div class="media">
           <div class="media-left media-middle">
-            <a href="#">
+            <a class="fancybox" href="images/timeline/04.jpg" title="Miki 出生照">
               <img class="media-object timeline-thumb" src="images/timeline/04_thumb.jpg" alt="...">
             </a>
           </div>
@@ -156,7 +161,7 @@
         <!-- Pom全家福 -->
         <div class="media">
           <div class="media-left media-middle">
-            <a href="#">
+            <a class="fancybox" href="images/timeline/05.jpg" title="周家全家福">
               <img class="media-object timeline-thumb" src="images/timeline/05_thumb.jpg" alt="...">
             </a>
           </div>
@@ -169,7 +174,7 @@
         <!-- Miki全家福 -->
         <div class="media">
           <div class="media-left media-middle">
-            <a href="#">
+            <a class="fancybox" href="images/timeline/06.jpg" title="賴家全家福">
               <img class="media-object timeline-thumb" src="images/timeline/06_thumb.jpg" alt="...">
             </a>
           </div>
@@ -182,7 +187,7 @@
         <!-- 紀念日 -->
         <div class="media">
           <div class="media-left media-middle">
-            <a href="#">
+            <a class="fancybox" href="images/timeline/07.jpg" title="紀念日 2006/1/1">
               <img class="media-object timeline-thumb" src="images/timeline/07_thumb.jpg" alt="...">
             </a>
           </div>
@@ -201,10 +206,10 @@
         <!-- 生活照 & 結婚照 -->
         <div class="media">
           <div class="media-left">
-            <a href="#">
+            <a class="fancybox" href="images/timeline/08.jpg" title="生活照">
               <img class="media-object timeline-thumb" src="images/timeline/08_thumb.jpg" alt="...">
             </a>
-            <a href="#">
+            <a class="fancybox visible-xs" href="images/timeline/09.jpg" title="結婚照">
               <img class="media-object timeline-thumb" src="images/timeline/09_thumb.jpg" alt="...">
             </a>
           </div>
@@ -213,8 +218,8 @@
             我們決定給彼此一輩子的幸福<br>我們挽著手，並肩同行於我們生命新頁中的每一天
           </div>
           <div class="media-right hidden-xs">
-            <a href="#">
-              <img class="media-object timeline-thumb" src="images/timeline/09_thumb.jpg" alt="...">
+            <a class="fancybox" href="images/timeline/10.jpg" title="結婚照">
+              <img class="media-object timeline-thumb" src="images/timeline/10_thumb.jpg" alt="...">
             </a>
           </div>
         </div>
@@ -237,20 +242,20 @@
     <!-- photo gallery using ResponsiveSlides.js -->
     <div class="rslides_container">
       <ul class="rslides">
-        <li><img src="photos/photos01.jpg" alt=""></li>
-        <li><img src="photos/photos02.jpg" alt=""></li>
-        <li><img src="photos/photos03.jpg" alt=""></li>
-        <li><img src="photos/photos04.jpg" alt=""></li>
-        <li><img src="photos/photos05.jpg" alt=""></li>
-        <li><img src="photos/photos06.jpg" alt=""></li>
-        <li><img src="photos/photos07.jpg" alt=""></li>
-        <li><img src="photos/photos08.jpg" alt=""></li>
-        <li><img src="photos/photos09.jpg" alt=""></li>
-        <li><img src="photos/photos10.jpg" alt=""></li>
-        <li><img src="photos/photos11.jpg" alt=""></li>
-        <li><img src="photos/photos12.jpg" alt=""></li>
-        <li><img src="photos/photos13.jpg" alt=""></li>
-        <li><img src="photos/photos14.jpg" alt=""></li>
+        <li><a class="fancybox-thumb" rel="fancybox-thumb" href="photos/photos01.jpg"><img src="photos/photos01.jpg" alt=""></a></li>
+        <li><a class="fancybox-thumb" rel="fancybox-thumb" href="photos/photos02.jpg"><img src="photos/photos02.jpg" alt=""></a></li>
+        <li><a class="fancybox-thumb" rel="fancybox-thumb" href="photos/photos03.jpg"><img src="photos/photos03.jpg" alt=""></a></li>
+        <li><a class="fancybox-thumb" rel="fancybox-thumb" href="photos/photos04.jpg"><img src="photos/photos04.jpg" alt=""></a></li>
+        <li><a class="fancybox-thumb" rel="fancybox-thumb" href="photos/photos05.jpg"><img src="photos/photos05.jpg" alt=""></a></li>
+        <li><a class="fancybox-thumb" rel="fancybox-thumb" href="photos/photos06.jpg"><img src="photos/photos06.jpg" alt=""></a></li>
+        <li><a class="fancybox-thumb" rel="fancybox-thumb" href="photos/photos07.jpg"><img src="photos/photos07.jpg" alt=""></a></li>
+        <li><a class="fancybox-thumb" rel="fancybox-thumb" href="photos/photos08.jpg"><img src="photos/photos08.jpg" alt=""></a></li>
+        <li><a class="fancybox-thumb" rel="fancybox-thumb" href="photos/photos09.jpg"><img src="photos/photos09.jpg" alt=""></a></li>
+        <li><a class="fancybox-thumb" rel="fancybox-thumb" href="photos/photos10.jpg"><img src="photos/photos10.jpg" alt=""></a></li>
+        <li><a class="fancybox-thumb" rel="fancybox-thumb" href="photos/photos11.jpg"><img src="photos/photos11.jpg" alt=""></a></li>
+        <li><a class="fancybox-thumb" rel="fancybox-thumb" href="photos/photos12.jpg"><img src="photos/photos12.jpg" alt=""></a></li>
+        <li><a class="fancybox-thumb" rel="fancybox-thumb" href="photos/photos13.jpg"><img src="photos/photos13.jpg" alt=""></a></li>
+        <li><a class="fancybox-thumb" rel="fancybox-thumb" href="photos/photos14.jpg"><img src="photos/photos14.jpg" alt=""></a></li>
       </ul>
     </div>
 
@@ -339,42 +344,13 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-  // navigation click actions
-  $('.scroll-link').on('click', function(event){
-    event.preventDefault();
-    var sectionID = $(this).attr("data-id");
-    scrollToID('#' + sectionID, 750);
-  });
-  // scroll to top action
-  $('.scroll-top').on('click', function(event) {
-    event.preventDefault();
-    $('html, body').animate({scrollTop:0}, 'slow');
-  });
-  // mobile nav toggle
-  $('#nav-toggle').on('click', function (event) {
-    event.preventDefault();
-    $('#main-nav').toggleClass("open");
-  });
-});
-// scroll function
-function scrollToID(id, speed){
-  var offSet = 50;
-  var targetOffset = $(id).offset().top - offSet;
-  var mainNav = $('#main-nav');
-  $('html,body').animate({scrollTop:targetOffset}, speed);
-  if (mainNav.hasClass("open")) {
-    mainNav.css("height", "1px").removeClass("in").addClass("collapse");
-    mainNav.removeClass("open");
-  }
-}
-if (typeof console === "undefined") {
-    console = {
-        log: function() { }
-    };
-}
-</script>
+<!-- fancybox -->
+<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script type="text/javascript" src="js/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="js/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<script type="text/javascript" src="js/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
 
 <!--ResponsiveSlides.js code-->
 <script src="js/responsiveslides.min.js"></script>

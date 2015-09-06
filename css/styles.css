@@ -171,21 +171,24 @@ hr {border-color: #ddd;}
   text-align: center;
   margin: 0;
 }
-
 .timeline-thumb {
   width: 64px;
   height: 64px;
 }
-
 .middle-line {
   position: relative;
   top: 10px;
   left: 10px;
 }
-
 .traffic-map {
   width: 420px;
   float: right;
+}
+#refill {
+  display: none;
+}
+#check {
+  display: none;
 }
 
 /* -------------- photo gallery CSS for ResponsiveSlides.js ------------ */

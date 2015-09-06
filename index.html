@@ -9,16 +9,21 @@
   <!--/ favicon -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href='http://fonts.googleapis.com/css?family=Amatic+SC:700,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/earlyaccess/cwtexhei.css' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/earlyaccess/cwtexyen.css' rel='stylesheet' type='text/css'>
   <!-- fancybox -->
   <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
   <link rel="stylesheet" href="js/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
   <link rel="stylesheet" href="js/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+  <!-- SweetAlert -->
+  <link rel="stylesheet" href="css/sweetalert.css">
 
   <link rel="stylesheet" href="css/styles.css" media="screen">
+  <script src="//www.parsecdn.com/js/parse-1.5.0.min.js"></script>
 </head>
 
 <body>
-<div class="header">
+<section class="header">
   <div class="container">
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="navbar-header">
@@ -45,10 +50,10 @@
     <!--/.navbar-->
   </div>
   <!--/.container-->
-</div>
+</section>
 <!--/.header-->
 
-<div class="page-section intro">
+<section class="page-section intro">
   <div class="container">
     <div class="headline">
       <h1>Pom & Miki</h1>
@@ -61,7 +66,7 @@
     </div>
   </div>
   <!--/.container-->
-</div>
+</section>
 <!--/.page-section-->
 
 <!-- Our Story -->
@@ -99,10 +104,10 @@
   </div>
 </div> -->
 
-<div id="story" class="page-section">
+<section id="story" class="page-section">
   <div class="container bubble storybubble">
 
-    <h2><a href="#" class="scroll-link" data-id="story">our story</a></h2>
+    <h2><a href="#" class="scroll-link" data-id="story">我們的故事</a></h2>
 
     <div class="row">
       <div class="col-md-12">
@@ -231,13 +236,13 @@
   <div class="container nextnav">
     <p><button class="scroll-link btn btn-dark" data-id="photos">欣賞婚紗照</button></p>
   </div>
-</div>
+</section>
 <!--/#story-->
 
 <!-- Photos -->
-<div id="photos" class="page-section">
+<section id="photos" class="page-section">
   <div class="container bubble photogallery">
-    <h2><a href="#" class="scroll-link" data-id="photos">photos</a></h2>
+    <h2><a href="#" class="scroll-link" data-id="photos">Photos</a></h2>
 
     <!-- photo gallery using ResponsiveSlides.js -->
     <div class="rslides_container">
@@ -265,25 +270,24 @@
   <div class="container nextnav">
     <p><button class="scroll-link btn btn-dark" data-id="reception">招待資訊</button></p>
   </div>
-</div>
+</section>
 <!--/#photos-->
 
 <!-- Reception(婚宴資訊) -->
-<div id="reception" class="page-section">
+<section id="reception" class="page-section">
   <div class="container bubble">
 
-    <h2><a href="#" class="scroll-link" data-id="reception">Reception</a></h2>
+    <h2><a href="#" class="scroll-link" data-id="reception">招待資訊</a></h2>
     <p>誠摯邀請您來參加我們的結婚喜宴! 下面是關於婚宴的訊息:</p>
 
-    <h3>日期</h3>
-    <p>104 年 11 月 1日 (日)  18:00 晚宴</p>
-    <!-- <h3>Festivities</h3>
-    <p>Come celebrate with us in the beautiful rustic setting of Farm Kitchen.</p>
-    <p>There will be food, drink, music, dancing, and good times!</p> -->
-
-    <h3>餐廳</h3>
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-sm-5">
+        <h3>日期</h3>
+        <p>104年11月1日(日) 18:00 晚宴</p>
+        <!-- <h3>Festivities</h3>
+        <p>Come celebrate with us in the beautiful rustic setting of Farm Kitchen.</p>
+        <p>There will be food, drink, music, dancing, and good times!</p> -->
+        <h3>餐廳</h3>
         <p><a href="http://www.hwayoung.com/index.php?lang=zh-Hant&page=huanqiu" target="_blank">華漾環球 4F 福漾廳</a><br />
           23546 新北市中和區<br />
           中山路三段122號4樓</p>
@@ -291,8 +295,8 @@
           <a class="btn btn-dark" href="https://goo.gl/maps/TUOm9" target="_blank">查看地圖</a>
         </p>
       </div>
-      <div class="col-sm-8 hidden-xs">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.8096385065487!2d121.4748252!3d25.0065836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a827389b8269%3A0x5a6d3e0eda5d2f9d!2zMjM15paw5YyX5biC5Lit5ZKM5Y2A5Lit5bGx6Lev5LiJ5q61MTIy6Jmf!5e0!3m2!1szh-TW!2stw!4v1441524052806" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="col-sm-7 hidden-xs">
+        <img class="traffic-map" src="images/map.jpg">
       </div>
     </div>
   </div>
@@ -300,22 +304,77 @@
   <div class="container nextnav">
     <p><button class="scroll-link btn btn-dark" data-id="rsvp">來祝福我們</button></p>
   </div>
-</div>
+</section>
 <!--/#reception-->
 
 <!-- RSVP表單 -->
-<div id="rsvp" class="page-section">
+<section id="rsvp" class="page-section">
   <div class="container bubble">
-    <h2><a href="#" class="scroll-link" data-id="rsvp">RSVP</a></h2>
+    <h2><a href="#" class="scroll-link" data-id="rsvp">邀請問卷</a></h2>
     <p>請在 10 月 1 日前填寫邀請問卷，好讓我們能準備好歡迎您，感謝!</p>
 
-    <p><a href="https://docs.google.com/forms/d/1lXX6clG_ZQOelqtEz0N4t9va0_Ov8a8xDq7ufSnKtcw/viewform" class="btn btn-dark" target="_blank">邀請問卷</a></p>
+    <!-- <p><a href="https://docs.google.com/forms/d/1lXX6clG_ZQOelqtEz0N4t9va0_Ov8a8xDq7ufSnKtcw/viewform" class="btn btn-dark" target="_blank">邀請問卷</a></p> -->
+
+    <div class="row" id="rsvp_form">
+      <div class="col-sm-12">
+        <form id="myForm">
+          <div class="form-group">
+            <label for="username">姓名<span class="text-danger">*</span></label>
+            <input type="name" class="form-control" id="username" placeholder="您的大名">
+          </div>
+          <div class="form-group">
+            <label for="cellphone">電話<span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="cellphone" placeholder="聯絡電話">
+          </div>
+          <div class="form-group">
+            <label for="desire">參加意願<span class="text-danger">*</span></label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="desireRadios" id="desireRadios1" value="attend" checked>準時出席
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="desireRadios" id="desireRadios2" value="no_attend">有事無法出席
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="desireRadios" id="desireRadios3" value="just_mail_me">有事無法出席，但我想收到喜帖
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="address">通訊地址<span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="address" placeholder="通訊地址">
+          </div>
+          <div class="form-group">
+            <label for="people">出席人數<span class="text-danger">*</span></label>
+            <input type="number" class="form-control" value="0" min="0" id="people">
+          </div>
+          <div class="form-group">
+            <label for="vegetables">為您準備 素食人數</label>
+            <input type="number" class="form-control" value="0" min="0" id="vegetables">
+          </div>
+          <div class="form-group">
+            <label for="children">為您準備 兒童椅數量</label>
+            <input type="number" class="form-control" value="0" min="0" id="children">
+          </div>
+          <div class="form-group">
+            <label for="note">我有話要說</label>
+            <textarea class="form-control" rows="3" id="note"></textarea>
+          </div>
+
+          <button type="button" id="send_rsvp" class="btn btn-default">提交</button>
+        </form>
+      </div>
+    </div>
   </div>
-  <!--/.container-->
-  <div class="container nextnav">
+
+  <!-- <div class="container nextnav">
     <p><a href="#" class="scroll-link btn btn-dark" data-id="registry">Send us on our honeymoon</a></p>
-  </div>
-</div>
+  </div> -->
+</section>
 <!--/#rsvp-->
 
 <!-- 送禮or送錢 -->
@@ -349,34 +408,14 @@
 <script type="text/javascript" src="js/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
 <script type="text/javascript" src="js/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
 <script type="text/javascript" src="js/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<!-- SweetAlert -->
+<script type="text/javascript" src="js/sweetalert.min.js"></script>
 
 <script type="text/javascript" src="js/main.js"></script>
 
 
 <!--ResponsiveSlides.js code-->
 <script src="js/responsiveslides.min.js"></script>
-<script>
-  $(function() {
-    $(".rslides").responsiveSlides({
-      auto: true,             // Boolean: Animate automatically, true or false
-      speed: 1100,             // Integer: Speed of the transition, in milliseconds
-      timeout: 5000,          // Integer: Time between slide transitions, in milliseconds
-      pager: true,           // Boolean: Show pager, true or false
-      nav: true,             // Boolean: Show navigation, true or false
-      random: false,          // Boolean: Randomize the order of the slides, true or false
-      pause: false,           // Boolean: Pause on hover, true or false
-      pauseControls: false,    // Boolean: Pause when hovering controls, true or false
-      prevText: "",   // String: Text for the "previous" button
-      nextText: "",       // String: Text for the "next" button
-      maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
-      navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
-      manualControls: "",     // Selector: Declare custom pager navigation
-      namespace: "centered-btns",   // String: Change the default namespace used
-      before: function(){},   // Function: Before callback
-      after: function(){}     // Function: After callback
-  });
-  });
-</script>
 
 </body>
 </html>

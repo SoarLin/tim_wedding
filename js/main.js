@@ -20,14 +20,18 @@ $(document).ready(function() {
     openEffect  : 'elastic',
     closeEffect : 'elastic',
     helpers: {
+      title : {
+        type : 'over'
+      },
       overlay: {
         locked: false
       }
     }
   });
+
   $(".fancybox-thumb").fancybox({
-    prevEffect  : 'none',
-    nextEffect  : 'none',
+    prevEffect  : 'elastic',
+    nextEffect  : 'elastic',
     helpers : {
       thumbs  : {
         width : 50,

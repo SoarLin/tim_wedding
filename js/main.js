@@ -22,7 +22,8 @@ $(document).ready(function() {
     paginationClickable: true,
     loop: true,
     autoplay: 3200,
-    speed: 600,
+    speed: 800,
+    autoplayDisableOnInteraction: false,
   });
 
   $('#refill').on('click', function(event){

@@ -20,16 +20,7 @@ $(document).ready(function() {
   var mySwiper = new Swiper ('.swiper-container', {
     pagination: '.swiper-pagination',
     paginationClickable: true,
-    autoplay: 3000,
-    autoplayDisableOnInteraction: false,
-    effect: "coverflow",
-    coverflow: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows : true
-    }
+    loop: true,
   });
 
   $('#refill').on('click', function(event){

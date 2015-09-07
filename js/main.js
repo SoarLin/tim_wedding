@@ -21,6 +21,8 @@ $(document).ready(function() {
     pagination: '.swiper-pagination',
     paginationClickable: true,
     loop: true,
+    autoplay: 3200,
+    speed: 600,
   });
 
   $('#refill').on('click', function(event){

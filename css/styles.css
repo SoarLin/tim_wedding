@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'cwTeXHei';
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot);
+  src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.ttf) format('truetype');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -53,7 +64,7 @@ p {
   max-width: 560px;
 }
 .page-section h1, h2 {
-  font-family: 'Amatic SC','cwTeXYen', cursive, serif;
+  font-family: 'Amatic SC','cwTeXHei', cursive, serif;
 }
 .intro h1 {
   font-size: 9em;

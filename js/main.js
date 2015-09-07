@@ -23,6 +23,7 @@ $(document).ready(function() {
     loop: true,
     autoplay: 3200,
     speed: 800,
+    autoplayDisableOnInteraction: false,
   });
 
   $('#refill').on('click', function(event){
